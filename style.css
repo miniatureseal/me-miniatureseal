@@ -197,11 +197,12 @@ section {
 .section-heading::after {
   content: '';
   display: block;
-  width: 300px;
+  width: 100%;
+  max-width: 300px;
   height: 1px;
   background-color: var(--lightest-navy);
   margin-left: 20px;
-  flex-shrink: 0;
+  flex-shrink: 1;
 }
 
 /* ── HERO ──────────────────────────────────────── */
