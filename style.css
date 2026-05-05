@@ -259,7 +259,10 @@ section {
   font-size: 14px;
   transition: var(--transition);
 }
+.btn::after { content: ' →'; }
 .btn:hover { background-color: var(--green-tint); }
+
+.resume-btn::after { content: ' ↗'; }
 
 /* ── ABOUT ─────────────────────────────────────── */
 .about-inner {
@@ -507,6 +510,7 @@ section {
   padding: 4px 10px;
   border-radius: var(--border-radius);
 }
+.project-links .tag-link::after { content: ' ↗'; }
 .project-links .tag-link:hover { background-color: var(--green-tint); }
 
 /* ── OTHER PROJECTS GRID ───────────────────────── */
@@ -589,6 +593,25 @@ section {
   color: var(--slate);
 }
 
+.card-tag-links {
+  display: flex;
+  gap: 8px;
+  margin-top: 16px;
+  position: relative;
+  z-index: 2;
+}
+.card-tag {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  border: 1px solid var(--green);
+  color: var(--green);
+  padding: 3px 9px;
+  border-radius: var(--border-radius);
+  transition: var(--transition);
+}
+.card-tag::after { content: ' ↗'; }
+.card-tag:hover { background-color: var(--green-tint); }
+
 /* ── PUBLICATIONS ──────────────────────────────── */
 .publication-item {
   background-color: var(--light-navy);
@@ -654,6 +677,7 @@ section {
   padding: 6px 14px;
   transition: var(--transition);
 }
+.pub-links a::after { content: ' ↗'; }
 .pub-links a:hover { background-color: var(--green-tint); }
 
 /* ── CONTACT ───────────────────────────────────── */
